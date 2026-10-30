@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Special Force 2 S.K.I.L.L. Pre-Register | Operation-RE:FORCE</title>
+    <meta
+      name="description"
+      content="Pre-register for Special Force 2 Operation-RE:FORCE and get a free premium arsenal on the December update."
+    />
+
+    <!-- Fonts: 본문 Noto Sans KR / 영문 타이틀·라벨·버튼 Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/prereg.css" />
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <main class="pp-page">
+        <section class="pp-stage">
+          <div class="pp-visual" aria-hidden="true">
+            <div class="pp-bg">
+              <img class="is-fill" src="images/main/bg.jpg" alt="" />
+            </div>
+            <div class="pp-canvas">
+              <span class="pp-faceLight"></span>
+              <div class="pp-character">
+                <img class="is-fill" src="images/main/char_hero.png" alt="" />
+              </div>
+            </div>
+            <span class="pp-gradCenter"></span>
+            <span class="pp-gradTopBottom"></span>
+          </div>
+
+          <sf2-top-icons></sf2-top-icons>
+
+          <div class="pp-title">
+            <sf2-title-logotype></sf2-title-logotype>
+          </div>
+        </section>
+
+        <section class="pp-panelWrap" aria-label="Pre-register">
+          <div class="pp-panel">
+            <div class="pp-rewardCol">
+              <sf2-reward-column @open-detail="isRewardOpen = true"></sf2-reward-column>
+            </div>
+            <div class="pp-eventCol">
+              <sf2-event-panel
+                :busy="busy"
+                @register="handleRegister"
+                @open-detail="isDetailOpen = true"
+              ></sf2-event-panel>
+            </div>
+            <span class="pp-bracket pp-tl" aria-hidden="true"></span>
+            <span class="pp-bracket pp-tr" aria-hidden="true"></span>
+            <span class="pp-bracket pp-bl" aria-hidden="true"></span>
+            <span class="pp-bracket pp-br" aria-hidden="true"></span>
+          </div>
+        </section>
+      </main>
+
+      <sf2-footer></sf2-footer>
+
+      <sf2-reward-popup :open="isRewardOpen" @close="isRewardOpen = false"></sf2-reward-popup>
+      <sf2-event-detail-popup :open="isDetailOpen" @close="isDetailOpen = false"></sf2-event-detail-popup>
+      <sf2-alert-popup :message="alert" @close="closeAlert" @confirm="confirmAlert"></sf2-alert-popup>
+    </div>
+
+    <!-- Vue 2.7 (빌드 없음, 템플릿 런타임 컴파일) -->
+    <script src="js/vendor/vue.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+
+    <script src="js/components/modal.js"></script>
+    <script src="js/components/popups.js"></script>
+    <script src="js/components/prereg.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
