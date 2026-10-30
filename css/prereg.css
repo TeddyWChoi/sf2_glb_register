@@ -133,7 +133,7 @@
 
 .pp-title {
   position: absolute;
-  top: 124px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -284,13 +284,13 @@
 .tl-operation {
   width: 880px;
   height: auto;
-  margin-top: 4px;
+  margin-top: 14px;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.85));
 }
 @media (max-width: 1023px) {
   .tl-operation {
     width: 350px;
-    margin-top: 2px;
+    margin-top: 6px;
   }
 }
 
@@ -298,7 +298,7 @@
   display: flex;
   align-items: center;
   gap: 18px;
-  margin-top: 14px;
+  margin-top: 26px;
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 34px;
   font-weight: 600;
@@ -311,7 +311,7 @@
 @media (max-width: 1023px) {
   .tl-headingText {
     gap: 10px;
-    margin-top: 8px;
+    margin-top: 14px;
     font-size: 18px;
     letter-spacing: 5px;
   }
@@ -335,7 +335,7 @@
   display: flex;
   align-items: center;
   gap: 18px;
-  margin-top: 16px;
+  margin-top: 22px;
   padding: 10px 28px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 15%, rgba(0, 0, 0, 0.75) 85%, rgba(0, 0, 0, 0) 100%);
   font-family: "Oswald", "Arial Narrow", sans-serif;
@@ -347,7 +347,7 @@
 @media (max-width: 1023px) {
   .tl-period {
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 14px;
     padding: 6px 16px;
     font-size: 13px;
   }
