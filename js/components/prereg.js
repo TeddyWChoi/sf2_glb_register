@@ -55,7 +55,7 @@
       '<h1 class="tl-heading">' +
       '<img class="tl-logo" src="images/main/logo_skill.webp" alt="Special Force 2 S.K.I.L.L." width="940" height="244" />' +
       // FigJam: 기존 로고 아래에 Operation-RE:FORCE 로고 추가
-      '<img class="tl-operation" src="images/main/logo_operation_reforce.webp" alt="Operation RE:FORCE" width="960" height="111" />' +
+      '<img class="tl-operation" src="images/main/logo_operation_reforce.webp" alt="Operation RE:FORCE" width="1400" height="186" />' +
       '<span class="tl-headingText">PRE-REGISTER</span>' +
       "</h1>" +
       '<p class="tl-period">' +
