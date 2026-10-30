@@ -1,6 +1,6 @@
-/* 사전예약 페이지 스타일 (원본 SCSS 모듈을 컴파일, 클래스는 컴포넌트별 접두사) */
+/* 사전예약 페이지 스타일 — 순수 CSS3 (클래스는 컴포넌트별 접두사, README 참고) */
 
-/* ===== components/prereg/PreregPage.module.scss → .pp-* ===== */
+/* ===== PreregPage .pp-* ===== */
 .pp-page {
   position: relative;
   height: 1080px;
@@ -254,7 +254,7 @@
 }
 
 
-/* ===== components/prereg/TitleLogotype.module.scss → .tl-* ===== */
+/* ===== TitleLogotype .tl-* ===== */
 .tl-title {
   display: flex;
   flex-direction: column;
@@ -417,7 +417,7 @@
 }
 
 
-/* ===== components/prereg/RewardColumn.module.scss → .rw-* ===== */
+/* ===== RewardColumn .rw-* ===== */
 .rw-reward {
   display: flex;
   flex-direction: column;
@@ -606,7 +606,7 @@
 }
 
 
-/* ===== components/prereg/EventPanel.module.scss → .ev-* ===== */
+/* ===== EventPanel .ev-* ===== */
 .ev-event {
   display: flex;
   flex-direction: column;
@@ -674,6 +674,7 @@
   outline: 2px solid #f2c46b;
   outline-offset: 2px;
 }
+.ev-register.is-busy,
 .ev-register:disabled {
   cursor: not-allowed;
 }
@@ -700,6 +701,7 @@
 .ev-register:not(:disabled):active {
   background: linear-gradient(180deg, #b8913c 0%, #7a5a18 100%);
 }
+.ev-register.is-busy,
 .ev-register:disabled {
   opacity: 0.7;
 }
@@ -754,7 +756,7 @@
 }
 
 
-/* ===== components/prereg/TopIcons.module.scss → .ti-* ===== */
+/* ===== TopIcons .ti-* ===== */
 .ti-icons {
   position: absolute;
   top: 28px;
@@ -816,7 +818,7 @@
 }
 
 
-/* ===== components/prereg/Footer.module.scss → .ft-* ===== */
+/* ===== Footer .ft-* ===== */
 .ft-footer {
   position: relative;
   background: #0a0a0a;
@@ -900,7 +902,7 @@
 }
 
 
-/* ===== components/common/Modal.module.scss → .md-* ===== */
+/* ===== Modal .md-* ===== */
 .md-dim {
   position: fixed;
   inset: 0;
@@ -1053,7 +1055,7 @@
 }
 
 
-/* ===== components/popup/Popup.module.scss → .pu-* ===== */
+/* ===== Popup .pu-* ===== */
 .pu-alert {
   padding: 16px 0 4px;
   text-align: center;

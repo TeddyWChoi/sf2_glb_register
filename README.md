@@ -27,10 +27,10 @@ Mock 상태 확인: 주소 뒤에 `?mock=` 을 붙이세요.
 ```
 index.html                 페이지 마크업 (#app) + 스크립트 로드 순서
 css/
-  base.css                 리셋·기본 (원본 globals.scss) + .is-fill(이미지 꽉 채우기) + [v-cloak]
-  prereg.css               페이지·팝업 스타일 (원본 SCSS 모듈을 컴파일)
+  base.css                 리셋·기본 + .is-fill(이미지 꽉 채우기) + [v-cloak]
+  prereg.css               페이지·팝업 스타일
 js/
-  vendor/vue.js            Vue 2.7.16 (템플릿 런타임 컴파일 포함 빌드)
+  vendor/vue.min.js        Vue 2.7.16 운영용 압축 빌드 (템플릿 런타임 컴파일 포함)
   config.js                SF2Config(기간·로그인 URL·외부 링크) / SF2Alerts(팝업 문구) / SF2Rewards(보상)
   api.js                   SF2Api — getSession / registerPrereg (현재 Mock, Promise 반환)
   components/
@@ -40,6 +40,8 @@ js/
   app.js                   루트 Vue 인스턴스 — 팝업 상태·[REGISTER] 로직
 images/                    main(배경·캐릭터·로고·보상), reward, icons, footer
 ```
+
+CSS는 SCSS 등 전처리기 없는 순수 CSS3입니다. 파일을 바로 수정하면 됩니다.
 
 스크립트는 `index.html`에 적힌 순서대로 로드해야 합니다 (vue → config → api → components → app).
 JS는 ES5 문법 + Promise로 작성했습니다 (화살표 함수·async 없음).
@@ -60,6 +62,21 @@ JS는 ES5 문법 + Promise로 작성했습니다 (화살표 함수·async 없음
 | `pu-`  | 팝업 내용 (popups.js)                |
 
 반응형 기준: 1023px 이하 MO (`@media (max-width: 1023px)`).
+
+## 이미지 최적화
+
+화면 표시 크기의 2배를 기준으로 줄이고 WebP로 바꿨습니다. 이미지 합계 4.2MB → 0.7MB.
+
+| 파일                             | 크기                      | 용량          |
+| -------------------------------- | ------------------------- | ------------- |
+| main/char_hero.webp              | 1600×1864 (PC 800px 표시) | 2.4MB → 229KB |
+| main/bg.webp                     | 1672×941                  | 552KB → 255KB |
+| main/logo_skill.webp             | 940×244 (PC 460px)        | 596KB → 51KB  |
+| main/logo_operation_reforce.webp | 960×111 (PC 480px)        | 334KB → 40KB  |
+| main/reward_main.webp            | 700×700 (PC 332px)        | 144KB → 60KB  |
+| reward/*.webp (10종)             | 144×144                   | 201KB → 60KB  |
+
+푸터 로고·아이콘(PNG·SVG)은 작아서 그대로 두었습니다. Vue도 개발용(434KB) 대신 운영용 압축 빌드(105KB)를 씁니다.
 
 ## [REGISTER] 동작 (FigJam 팝업 3종)
 
@@ -85,7 +102,7 @@ JS는 ES5 문법 + Promise로 작성했습니다 (화살표 함수·async 없음
 ## 확인 필요 (TBD)
 
 - `loginUrl`, 상단 아이콘 외부 링크(`externalLinks`)
-- 보상 키비주얼: 한국판 이미지를 사용 중입니다. VIP가 들어간 글로벌 키비주얼을 받으면 `images/main/reward_main.jpg`를 교체하세요.
+- 보상 키비주얼: 한국판 이미지를 사용 중입니다. VIP가 들어간 글로벌 키비주얼을 받으면 `images/main/reward_main.webp`를 교체하세요.
 - VIP(7D) 아이콘은 FigJam 이미지(142×98) 임시입니다.
 - 보상 영문명·기간: Wall Spray Founder(글로벌 이미지 30일 vs 한국 영구), EXP Bonus 100% 포함 여부 — 사업팀 확인 필요.
 - FigJam 메모의 "상단·하단 버튼 2곳"은 원스크린이라 버튼 1개로 줄였습니다.

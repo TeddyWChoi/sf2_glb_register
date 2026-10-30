@@ -65,16 +65,16 @@
    */
   global.SF2Rewards = {
     items: [
-      { name: "VIP (7D)", period: "7 day(s)", amount: "x1", icon: "images/reward/vip_7d.png", highlight: true },
-      { name: "Papaya Shirts", period: "Permanent", amount: "x1", icon: "images/reward/papaya_founder_shirt.png" },
-      { name: "Eagle Eye", period: "30 day(s)", amount: "x1", icon: "images/reward/eagle_eye.png" },
-      { name: "FN F2000 Predator", period: "Permanent", amount: "x1", icon: "images/reward/fn_f2000_predator.png" },
-      { name: "FN F2000 Predator Papaya", period: "Permanent", amount: "x1", icon: "images/reward/fn_f2000_predator_papaya.png" },
-      { name: "M67 Gravity", period: "Permanent", amount: "x1", icon: "images/reward/m67_gravity.png" },
-      { name: "Tomahawk T-Ruler", period: "Permanent", amount: "x1", icon: "images/reward/tomahawk_ruler.png" },
-      { name: "EXP Bonus 100%", period: "30 day(s)", amount: "x1", icon: "images/reward/exp_bonus_100p.png" },
-      { name: "Quick SP Pay 30P", period: "30 day(s)", amount: "x1", icon: "images/reward/quick_sp_pay_30p.png" },
-      { name: "Wall Spray Founder", period: "30 day(s)", amount: "x1", icon: "images/reward/wall_spray_sf2_founder.png" },
+      { name: "VIP (7D)", period: "7 day(s)", amount: "x1", icon: "images/reward/vip_7d.webp", highlight: true },
+      { name: "Papaya Shirts", period: "Permanent", amount: "x1", icon: "images/reward/papaya_founder_shirt.webp" },
+      { name: "Eagle Eye", period: "30 day(s)", amount: "x1", icon: "images/reward/eagle_eye.webp" },
+      { name: "FN F2000 Predator", period: "Permanent", amount: "x1", icon: "images/reward/fn_f2000_predator.webp" },
+      { name: "FN F2000 Predator Papaya", period: "Permanent", amount: "x1", icon: "images/reward/fn_f2000_predator_papaya.webp" },
+      { name: "M67 Gravity", period: "Permanent", amount: "x1", icon: "images/reward/m67_gravity.webp" },
+      { name: "Tomahawk T-Ruler", period: "Permanent", amount: "x1", icon: "images/reward/tomahawk_ruler.webp" },
+      { name: "EXP Bonus 100%", period: "30 day(s)", amount: "x1", icon: "images/reward/exp_bonus_100p.webp" },
+      { name: "Quick SP Pay 30P", period: "30 day(s)", amount: "x1", icon: "images/reward/quick_sp_pay_30p.webp" },
+      { name: "Wall Spray Founder", period: "30 day(s)", amount: "x1", icon: "images/reward/wall_spray_sf2_founder.webp" },
     ],
     notes: [
       "※ Rewards will be automatically delivered to your character within 7 days after the December update.",

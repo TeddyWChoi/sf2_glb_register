@@ -58,9 +58,9 @@
       '<span class="tl-sloganLine tl-reverse" aria-hidden="true"></span>' +
       "</p>" +
       '<h1 class="tl-heading">' +
-      '<img class="tl-logo" src="images/main/logo_skill.png" alt="Special Force 2 S.K.I.L.L." width="1882" height="488" />' +
+      '<img class="tl-logo" src="images/main/logo_skill.webp" alt="Special Force 2 S.K.I.L.L." width="940" height="244" />' +
       // FigJam: 기존 로고 아래에 Operation-RE:FORCE 로고 추가
-      '<img class="tl-operation" src="images/main/logo_operation_reforce.png" alt="Operation RE:FORCE" width="1400" height="162" />' +
+      '<img class="tl-operation" src="images/main/logo_operation_reforce.webp" alt="Operation RE:FORCE" width="960" height="111" />' +
       '<span class="tl-headingText">PRE-REGISTER</span>' +
       "</h1>" +
       '<p class="tl-period">' +
@@ -82,13 +82,13 @@
       '<section class="rw-reward" aria-labelledby="reward-title">' +
       '<h2 id="reward-title" class="rw-title">«&nbsp;&nbsp;PRE-REGISTER REWARDS&nbsp;&nbsp;»</h2>' +
       '<p class="rw-bonus">' +
-      '<img class="rw-bonusIcon" src="images/reward/vip_7d.png" alt="" width="142" height="98" />' +
+      '<img class="rw-bonusIcon" src="images/reward/vip_7d.webp" alt="" width="142" height="98" />' +
       '<span class="rw-bonusLabel">BONUS</span>' +
       '<strong class="rw-bonusName">VIP 7D</strong>' +
       '<span class="rw-bonusPlus">+ 9 ITEMS</span>' +
       "</p>" +
       '<div class="rw-visual">' +
-      '<img class="rw-img is-fill" src="images/main/reward_main.jpg" alt="Pre-register rewards" />' +
+      '<img class="rw-img is-fill" src="images/main/reward_main.webp" alt="Pre-register rewards" />' +
       '<span class="rw-shade" aria-hidden="true"></span>' +
       '<button type="button" class="rw-pill" @click="$emit(\'open-detail\')">' +
       'View rewards <span aria-hidden="true">›</span>' +
@@ -118,7 +118,9 @@
       '<dl class="ev-summary">' +
       '<div v-for="row in rows" :key="row.term" class="ev-row"><dt>{{ row.term }}</dt><dd>{{ row.desc }}</dd></div>' +
       "</dl>" +
-      '<button type="button" class="ev-register" :disabled="busy" :aria-busy="busy ? \'true\' : \'false\'"' +
+      // 처리 중에도 disabled 를 쓰지 않음 — disabled 가 되면 포커스가 빠져 팝업을 닫은 뒤 버튼으로 돌아오지 못함
+      // (중복 클릭은 app.js handleRegister 의 busy 가드로 막음)
+      '<button type="button" class="ev-register" :class="{ \'is-busy\': busy }" :aria-busy="busy ? \'true\' : \'false\'"' +
       ' @click="$emit(\'register\')">' +
       '<span class="ev-arrow" aria-hidden="true">‹‹‹</span>' +
       "REGISTER" +
