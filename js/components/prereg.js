@@ -113,7 +113,7 @@
     },
     template:
       '<div class="ev-event">' +
-      '<p class="ev-lead">A brand-new beginning.<br />Your loadout is waiting.</p>' +
+      '<p class="ev-lead">A brand-new beginning. Your loadout is waiting.</p>' +
       '<dl class="ev-summary">' +
       '<div v-for="row in rows" :key="row.term" class="ev-row"><dt>{{ row.term }}</dt><dd>{{ row.desc }}</dd></div>' +
       "</dl>" +
