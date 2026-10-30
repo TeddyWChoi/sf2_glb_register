@@ -67,14 +67,14 @@ JS는 ES5 문법 + Promise로 작성했습니다 (화살표 함수·async 없음
 
 화면 표시 크기의 2배를 기준으로 줄이고 WebP로 바꿨습니다. 이미지 합계 4.2MB → 0.7MB.
 
-| 파일                             | 크기                      | 용량          |
-| -------------------------------- | ------------------------- | ------------- |
-| main/char_hero.webp              | 1600×1864 (PC 800px 표시) | 2.4MB → 229KB |
-| main/bg.webp                     | 1672×941                  | 552KB → 255KB |
-| main/logo_skill.webp             | 940×244 (PC 460px)        | 596KB → 51KB  |
-| main/logo_operation_reforce.webp | 960×111 (PC 480px)        | 334KB → 40KB  |
-| main/reward_main.webp            | 700×700 (PC 332px)        | 144KB → 60KB  |
-| reward/*.webp (10종)             | 144×144                   | 201KB → 60KB  |
+| 파일                             | 크기                      | 용량                |
+| -------------------------------- | ------------------------- | ------------------- |
+| main/char_hero.webp              | 1600×1864 (PC 800px 표시) | 2.4MB → 229KB       |
+| main/bg.webp                     | 1672×941                  | 552KB → 255KB       |
+| main/logo_skill.webp             | 940×244 (PC 460px)        | 596KB → 51KB        |
+| main/logo_operation_reforce.webp | 960×120 (PC 480px)        | 41KB (금색 빛 버전) |
+| main/reward_main.webp            | 700×700 (PC 332px)        | 144KB → 60KB        |
+| reward/*.webp (10종)             | 144×144                   | 201KB → 60KB        |
 
 푸터 로고·아이콘(PNG·SVG)은 작아서 그대로 두었습니다. Vue도 개발용(434KB) 대신 운영용 압축 빌드(105KB)를 씁니다.
 
