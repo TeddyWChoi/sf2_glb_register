@@ -269,27 +269,29 @@
 }
 
 .tl-logo {
-  width: 300px;
-  height: 78px;
+  width: 230px;
+  height: 60px;
   object-fit: contain;
   filter: drop-shadow(0 0 30px rgba(224, 163, 69, 0.25)) drop-shadow(0 6px 18px rgba(0, 0, 0, 0.85));
 }
 @media (max-width: 1023px) {
   .tl-logo {
-    width: 120px;
-    height: 31px;
+    width: 96px;
+    height: 25px;
   }
 }
 
 .tl-operation {
-  width: 880px;
+  width: 1020px;
+  max-width: none; /* 타이틀이 left:50% 절대배치라 기본 max-width:100% 이면 960px 에서 잘림 */
   height: auto;
   margin-top: 14px;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.85));
 }
 @media (max-width: 1023px) {
   .tl-operation {
-    width: 350px;
+    width: 355px;
+    max-width: calc(100vw - 24px); /* 360px 이하 폰에서도 좌우 여백 확보 */
     margin-top: 6px;
   }
 }
