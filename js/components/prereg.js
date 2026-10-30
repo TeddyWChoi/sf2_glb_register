@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------
  * 사전예약 페이지 구성 컴포넌트 (원본 src/components/prereg/*.tsx)
  *  Sf2TopIcons      — 상단 외부 링크 아이콘 (새 창)
- *  Sf2TitleLogotype — 슬로건 + S.K.I.L.L. 로고 + Operation RE:FORCE 로고 + PRE-REGISTER + 이벤트 기간
+ *  Sf2TitleLogotype — S.K.I.L.L. 로고 + Operation RE:FORCE 로고 + PRE-REGISTER + 이벤트 기간
  *  Sf2RewardColumn  — 신청 패널 왼쪽: BONUS VIP 7D 띠 + 보상 키비주얼 (클릭 시 보상 팝업)
  *  Sf2EventPanel    — 신청 패널 오른쪽: 이벤트 요약 + [REGISTER] + Event details
  *  Sf2Footer        — 로고 · 저작권 (한국판 정책 링크 · 등급표시 제외)
@@ -52,11 +52,6 @@
     },
     template:
       '<div class="tl-title">' +
-      '<p class="tl-slogan">' +
-      '<span class="tl-sloganLine" aria-hidden="true"></span>' +
-      '<span class="tl-sloganText">GRAND CONTENTS UPDATE <em>UP-COMING!</em></span>' +
-      '<span class="tl-sloganLine tl-reverse" aria-hidden="true"></span>' +
-      "</p>" +
       '<h1 class="tl-heading">' +
       '<img class="tl-logo" src="images/main/logo_skill.webp" alt="Special Force 2 S.K.I.L.L." width="940" height="244" />' +
       // FigJam: 기존 로고 아래에 Operation-RE:FORCE 로고 추가
