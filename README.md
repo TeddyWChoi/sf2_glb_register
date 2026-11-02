@@ -85,7 +85,7 @@ JS는 ES5 문법 + Promise로 작성했습니다 (화살표 함수·async 없음
 | 상태                | 팝업 문구                                                                       | [OK] 후                 |
 | ------------------- | ------------------------------------------------------------------------------- | ----------------------- |
 | 로그인 안 한 상태   | Please log-in with your existing Papaya Play ID                                 | 웹 로그인 페이지로 이동 |
-| 로그인 후 등록 성공 | Thank you for Pre-Register. Your rewards will be injected on December Update!!! | 현 페이지 잔류          |
+| 로그인 후 등록 성공 | Thank you for Pre-Register. Your rewards will be injected on Update Day!!! | 현 페이지 잔류          |
 | 이미 등록한 경우    | You have already registered. Operation-RE:FORCE is Coming Soon!!                | 현 페이지 잔류          |
 
 - 로그인 안내 팝업은 [OK]만 로그인 페이지로 이동합니다. [X]·ESC는 닫기만 합니다.

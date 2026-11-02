@@ -72,13 +72,13 @@
       "</div>" +
       '<section class="pu-detailSection"><h3>▶ EVENT PERIOD</h3><p>{{ eventPeriod }}</p></section>' +
       '<section class="pu-detailSection"><h3>▶ ELIGIBILITY</h3>' +
-      "<p>Accounts with an existing character in Special Force 2.</p></section>" +
+      "<p>Papaya Play Account Existing in Special Force 2.</p></section>" +
       '<section class="pu-detailSection"><h3><span aria-hidden="true">📦</span> REWARD DELIVERY</h3>' +
       "<p>Rewards will be automatically delivered to your character within 7 days after the" +
-      " December update. No coupon codes, no extra steps.</p></section>" +
+      " update. No coupon codes, no extra steps.</p></section>" +
       '<section class="pu-detailSection"><h3><span aria-hidden="true">⚠️</span> NOTES</h3>' +
       '<ul class="pu-detailNotes">' +
-      "<li>Only accounts with an existing character are eligible.</li>" +
+      "<li>Only Papaya Play accounts existing in Special Force 2 are eligible.</li>" +
       "<li>Rewards are delivered once per account.</li>" +
       "<li>Event details and rewards may change due to operational circumstances.</li>" +
       "</ul></section>" +

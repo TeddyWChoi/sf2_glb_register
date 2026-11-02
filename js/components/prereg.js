@@ -105,8 +105,8 @@
     data: function () {
       return {
         rows: [
-          { term: "ELIGIBILITY", desc: "Accounts with an existing character in Special Force 2" },
-          { term: "DELIVERY", desc: "Automatically within 7 days after the December update" },
+          { term: "ELIGIBILITY", desc: "Papaya Play Account Existing in Special Force 2" },
+          { term: "DELIVERY", desc: "Automatically within 7 days after the update" },
           { term: "LIMIT", desc: "Once per account" },
         ],
       };

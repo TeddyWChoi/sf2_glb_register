@@ -6,12 +6,12 @@
   "use strict";
 
   global.SF2Config = {
-    eventPeriod: "November 20, 2026 – until the December update",
+    eventPeriod: "November 20, 2026 – until the update",
 
     /** 타이틀 아래 기간 바 표기 */
     eventPeriodBar: {
       start: "NOV 20, 2026",
-      end: "DECEMBER UPDATE",
+      end: "UPDATE DAY",
     },
 
     /**
@@ -43,7 +43,7 @@
     complete: {
       title: "Pre-Register Complete",
       message:
-        "Thank you for Pre-Register.\nYour rewards will be injected on December Update!!!",
+        "Thank you for Pre-Register.\nYour rewards will be injected on Update Day!!!",
     },
     /** 이미 등록한 경우 → 현 페이지 잔류 */
     duplicate: {
@@ -77,7 +77,7 @@
       { name: "Wall Spray Founder", period: "30 day(s)", amount: "x1", icon: "images/reward/wall_spray_sf2_founder.webp" },
     ],
     notes: [
-      "※ Rewards will be automatically delivered to your character within 7 days after the December update.",
+      "※ Rewards will be automatically delivered to your character within 7 days after the update.",
       "※ Event details and rewards may change due to operational circumstances.",
     ],
   };
