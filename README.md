@@ -71,8 +71,8 @@ JS는 ES5 문법 + Promise로 작성했습니다 (화살표 함수·async 없음
 | -------------------------------- | ------------------------- | ------------------- |
 | main/char_hero.webp              | 1600×1864 (PC 800px 표시) | 2.4MB → 229KB       |
 | main/bg.webp                     | 1672×941                  | 552KB → 255KB       |
-| main/logo_skill.webp             | 940×244 (PC 460px)        | 596KB → 51KB        |
-| main/logo_operation_reforce.webp | 1400×186 (PC 700px) | 102KB |
+| main/logo_skill.webp             | 940×244 (PC 240px, 왼쪽 상단) | 596KB → 51KB    |
+| main/logo_sf2_wordmark.webp      | 1406×173 (PC 720px)       | 24KB                |
 | main/reward_main.webp            | 700×700 (PC 332px)        | 144KB → 60KB        |
 | reward/*.webp (10종)             | 144×144                   | 201KB → 60KB        |
 

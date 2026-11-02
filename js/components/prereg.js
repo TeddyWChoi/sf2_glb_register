@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------
  * 사전예약 페이지 구성 컴포넌트 (원본 src/components/prereg/*.tsx)
  *  Sf2TopIcons      — 상단 외부 링크 아이콘 (새 창)
- *  Sf2TitleLogotype — S.K.I.L.L. 로고 + Operation RE:FORCE 로고 + PRE-REGISTER + 이벤트 기간
+ *  Sf2TitleLogotype — SPECIAL FORCE 2 + Operation RE:FORCE 태그 + PRE-REGISTER + 이벤트 기간
  *  Sf2RewardColumn  — 신청 패널 왼쪽: BONUS VIP 7D 띠 + 보상 키비주얼 (클릭 시 보상 팝업)
  *  Sf2EventPanel    — 신청 패널 오른쪽: 이벤트 요약 + [REGISTER] + Event details
  *  Sf2Footer        — 로고 · 저작권 (한국판 정책 링크 · 등급표시 제외)
@@ -53,14 +53,14 @@
     template:
       '<div class="tl-title">' +
       '<h1 class="tl-heading">' +
-      '<img class="tl-logo" src="images/main/logo_skill.webp" alt="Special Force 2 S.K.I.L.L." width="940" height="244" />' +
-      // FigJam: 기존 로고 아래에 Operation-RE:FORCE 로고 추가
-      '<img class="tl-operation" src="images/main/logo_operation_reforce.webp" alt="Operation RE:FORCE" width="1400" height="186" />' +
-      // PRE-REGISTER — 흰색 라벨 (양옆 라인)
-      '<span class="tl-headingText">' +
-      '<span class="tl-labelLine" aria-hidden="true"></span>PRE-REGISTER' +
-      '<span class="tl-labelLine tl-reverse" aria-hidden="true"></span>' +
+      '<img class="tl-gameName" src="images/main/logo_sf2_wordmark.webp" alt="SPECIAL FORCE 2" width="1406" height="173" />' +
+      // Operation RE:FORCE — 검정·금색 태그
+      '<span class="tl-operation">' +
+      '<span class="tl-operationName">Operation</span>' +
+      '<span class="tl-operationAccent">RE:FORCE</span>' +
       "</span>" +
+      // PRE-REGISTER — 금색 메시지
+      '<span class="tl-headingText">PRE-REGISTER</span>' +
       "</h1>" +
       '<p class="tl-period">' +
       '<span class="tl-periodBadge">EVENT PERIOD</span>' +
